@@ -108,7 +108,7 @@ const PRESET_PROMPTS = [
   },
 ];
 
-export function PromptEditor({ onPromptChange }: PromptEditorProps) {
+export function PromptEditor({ onPromptChange, onLangChange }: PromptEditorProps) {
   const [open, setOpen] = useState(false);
   const [prompt, setPrompt] = useState(DEFAULT_PROMPT);
   const [saved, setSaved] = useState(false);
