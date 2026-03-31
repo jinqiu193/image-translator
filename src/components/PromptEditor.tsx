@@ -145,7 +145,7 @@ export function PromptEditor({ onPromptChange, onLangChange }: PromptEditorProps
     // 自动保存目标语言并通知父组件
     if (preset.lang && typeof window !== 'undefined') {
       localStorage.setItem('selected-target-lang', preset.lang);
-      onLangChange?.(preset.lang);
+      onLangChange?.(preset.lang as 'en' | 'th');
     }
   };
 
