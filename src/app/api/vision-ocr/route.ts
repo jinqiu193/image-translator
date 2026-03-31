@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 interface OCRResult {
   chinese: string;
   english: string;
+  thai?: string;
   region: string;
 }
 
