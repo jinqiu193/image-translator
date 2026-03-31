@@ -14,7 +14,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import type { TranslationResult } from '@/lib/translator';
-import type { TranslationOptions } from '@/components/OptionsPanel';
+import type { TranslationOptions } from '@/components/QuickOptions';
 
 interface ResultTableProps {
   results: TranslationResult[];
@@ -296,3 +296,4 @@ function StatCard({ icon: Icon, label, value, color, bgColor }: StatCardProps) {
     </Card>
   );
 }
+
